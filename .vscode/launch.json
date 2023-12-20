@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run KCMShell5",
+            "command": "source build/prefix.sh && kcmshell5 kcm_waydroid",
+            "request": "launch",
+            "type": "node-terminal",
+        }
+    ]
+}

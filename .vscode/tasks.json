@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cmake",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-B",
+                "build/",
+                "-DCMAKE_INSTALL_PREFIX=./build/install/"
+            ]
+        },
+        {
+            "label": "cmake-build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build/"
+            ]
+        },
+        {
+            "label": "cmake-install",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--install",
+                "build/"
+            ]
+        },
+        {
+            "label": "build-all",
+            "dependsOn": [
+                "cmake",
+                "cmake-build",
+                "cmake-install",
+            ],
+            "dependsOrder": "sequence",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
