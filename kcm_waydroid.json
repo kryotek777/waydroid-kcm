@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Description": "Configure Waydroid",
+        "FormFactors": [
+            "desktop",
+            "handset",
+            "tablet",
+            "mediacenter"
+        ],
+        "Icon": "waydroid",
+        "Name": "Configure Waydroid"
+    },
+    "X-KDE-Keywords": "Waydroid",
+    "X-KDE-System-Settings-Parent-Category": "personalization"
+}
