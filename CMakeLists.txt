@@ -15,6 +15,8 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Quick
     Core
+    Concurrent
+    Widgets
 )
 
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
@@ -30,6 +32,8 @@ target_sources(kcm_waydroid PRIVATE kcm_waydroid.cpp)
 
 target_link_libraries(kcm_waydroid
     Qt5::Core
+    Qt5::Concurrent
+    Qt5::Widgets
     KF5::CoreAddons
     KF5::I18n
     KF5::QuickAddons
